@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+
+
+<html>
+<head>
+	<title>Fibonacci Sequence</title>
+
+</head>
+
+<style type="text/css">
+	
+body {
+
+	margin:0;
+	text-align: left;
+
+}
+
+head {
+	margin:0;
+	padding:0;
+}
+
+#top {
+
+	background-color:#2DB4B4;
+	padding:20px 0 10px 30px;
+	height:100px;
+	border:1px solid blue;
+	margin:0;
+}
+
+#middle {
+	background-color:#56C3C3;
+	padding:20px 0 10px 30px;
+	height: 100px;
+	border-top:none;
+	border:1px solid blue;
+	margin:0;
+}
+
+
+
+
+</style>
+
+
+<body>
+
+	<div id="top">
+		
+			<p>Find the Nth Number of the Fibonacci sequence..</p>
+
+			<input id="Fib" type="number" />
+
+			<button onclick="fibonacci()">GO!</button>
+
+	 
+			<script type="text/javascript">
+
+			function fibonacci() {
+			
+			
+
+			var a=0, b=1, n=document.getElementById("Fib").value;
+
+			for (var i = 1; i < n; i++) {
+					
+					f=a+b;
+					a=b;
+					b=f;
+					
+			
+			}  if  (n==1) {
+
+				f=1;
+
+
+				}	
+
+				document.getElementById("ans").innerHTML =f;
+
+									}
+
+
+			</script>
+
+			<p id="ans"></p>
+
+			
+
+			</div>
+
+		<div id="middle">
+			
+		<p>What is the list of the Nth Number of the Fibonacci sequence..</p>
+
+			<input id="Fibtwo" type="number" />
+
+			<button onclick="fibonaccitwo()">GO!</button>
+
+	 
+			<script type="text/javascript">
+
+			function fibonaccitwo() {
+			
+			
+
+			var a=0, b=1, n=document.getElementById("Fibtwo").value;
+
+			for (var i = 1; i < n; i++) {
+					
+					f=a+b;
+					a=b;
+					b=f;
+					
+			
+										}  if  (n==1) {
+
+												f=1;
+
+														}	
+
+				document.getElementById("anstwo").innerHTML =f;
+
+								}
+
+
+			</script>
+
+			<p id="anstwo"></p>
+
+		</div>
+
+
+
+	
+
+
+</body>
+
+
+
+</html>
